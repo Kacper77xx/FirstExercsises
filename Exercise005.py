@@ -73,3 +73,28 @@
 #     print(second)
 # time.sleep(60 - pcTime[5])
 # print('The end')
+
+# import time
+# print('It is time since 01.01.1970 by now: ' + str(time.time()))
+
+# import time
+# currentTime = time.time()
+# print('5 * 5 = []?')
+# userResult = int(input())
+# if userResult == 25:
+#     afterTime = time.time()
+#     print('It is your calculation time: ' + str(afterTime - currentTime))
+
+# import time
+# time1 = time.time()
+# print(time1)
+# time.sleep(10)
+# time2 = time.time()
+# print(time2)
+# if time2 - time1 == 10:
+#     print('Great, the difference is exactly 10 seconds!')
+# else:
+#     print('The difference is not 10 seconds')
+
+# import time
+# print(time.strftime('DateTime: %Y, %B, %d, %H:%M, %S', time.gmtime()))
