@@ -14,23 +14,28 @@
 # text = 'cookie'
 # print(amount*text)
 
-# import random
-# points = 0
-# while True:
-#     n1 = random.randint(0, 101)
-#     n2 = random.randint(0, 101)
-#     print('n1 =',n1)
-#     print('n2 =',n2)
-#     difference = n1 - n2
-#     print('n1 - n2 = ?')
-#     print('Give me a result!')
-#     user = int(input())
-#     if difference == user:
-#         print('Correct!')
-#         points += 1
-#     else:
-#         print('Wrong!')
-#         points -= 1
-#     print('n1 - n2 = ' + str(difference))
-#     print('Your streak: ' + str(points))
-#     continue
+import random
+import time
+points = 0
+while True:
+    n1 = random.randint(0, 101)
+    n2 = random.randint(0, 101)
+    print('n1 =',n1)
+    print('n2 =',n2)
+    difference = n1 - n2
+    t1 = time.time()
+    print('n1 - n2 = ?')
+    print('Give me a result!')
+    user = int(input())
+    if difference == user:
+        print('Correct!')
+        t2 = time.time()
+        t3 = t2 - t1
+        points += 1
+        print('You needed ' + str(round(t3, 2)) + ' seconds for this')
+    else:
+        print('Wrong!')
+        points -= 1
+    print('n1 - n2 = ' + str(difference))
+    print('Your streak: ' + str(points))
+    continue
