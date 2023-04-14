@@ -96,5 +96,5 @@
 # else:
 #     print('The difference is not 10 seconds')
 
-# import time
-# print(time.strftime('DateTime: %Y, %B, %d, %H:%M, %S', time.gmtime()))
+import time
+print(time.strftime('DateTime: %Y, %B, %d, %H:%M, %S', time.gmtime()))
