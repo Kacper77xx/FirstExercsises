@@ -17,35 +17,42 @@
 # else:
 #     print("Unlucky, you've to repeat!")
 # print('Correct answer is: ', time.strftime('%S', time.gmtime()))
-points = 0
-print('First question:')
-print('2 + 2 = ?')
-q1 = int(input())
-if q1 == 4:
-    print(str(int(True)) + ' point')
-    points += 1
-else:
-    print(int(False))
-print('Second question:')
-print('Language of England is...?')
-q2 =input()
-if q2 == 'English':
-    print(str(int(True)) + ' point')
-    points += 1
-elif q2 == 'english':
-    print(str(int(True)) + ' point')
-    points += 1
-else:
-    print(int(False))
-print('Third question:')
-print("What animal do 'How how'?")
-q3 = input()
-if q3 == 'Dog':
-    print(str(int(True)) + ' point')
-    points += 1
-elif q3 == 'dog':
-    print(str(int(True)) + ' point')
-    points += 1
-else:
-    print(int(False))
-print('You received: ' + str(points))
+# points = 0
+# print('First question:')
+# print('2 + 2 = ?')
+# q1 = int(input())
+# if q1 == 4:
+#     print(str(int(True)) + ' point')
+#     points += 1
+# else:
+#     print(int(False))
+# print('Second question:')
+# print('Language of England is...?')
+# q2 =input()
+# if q2 == 'English':
+#     print(str(int(True)) + ' point')
+#     points += 1
+# elif q2 == 'english':
+#     print(str(int(True)) + ' point')
+#     points += 1
+# else:
+#     print(int(False))
+# print('Third question:')
+# print("What animal do 'How how'?")
+# q3 = input()
+# if q3 == 'Dog':
+#     print(str(int(True)) + ' point')
+#     points += 1
+# elif q3 == 'dog':
+#     print(str(int(True)) + ' point')
+#     points += 1
+# else:
+#     print(int(False))
+# print('You received: ' + str(points))
+
+while True:
+user_action = input("Enter a choice (rock, paper, scissors): ")
+    possible_actions = ["rock", "paper", "scissors"]
+    computer_action = random.choice(possible_actions)
+    print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
+
