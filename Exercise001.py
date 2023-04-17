@@ -49,10 +49,13 @@
 # else:
 #     print(int(False))
 # print('You received: ' + str(points))
-
+import random
 while True:
-user_action = input("Enter a choice (rock, paper, scissors): ")
+    user_action = input("Enter a choice (rock, paper, scissors): ")
     possible_actions = ["rock", "paper", "scissors"]
     computer_action = random.choice(possible_actions)
     print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
+    if user_action == possible_actions[0]:
+        elif computer_action == possible_actions[2]:
+            print('Rock beats scissors! User win!')
 
