@@ -49,6 +49,8 @@
 # else:
 #     print(int(False))
 # print('You received: ' + str(points))
+
+
 # import random
 # n1 = random.randint(1, 101)
 # n2 = random.randint(1, 101)
@@ -95,11 +97,22 @@
 # else:
 #     print('c')
 
-sum = 1
-while True:
-    print('*' * sum)
-    sum += 1
-    if sum == 10:
-        break
-print('Over')
+# sum = 1
+# while True:
+#     print('*' * sum)
+#     sum += 1
+#     if sum == 10:
+#         break
+# print('Over')
 
+# import random
+# while True:
+#     number = random.randint(1, 100)
+#     print(number)
+#     if number == 50:
+#         break
+# print('Over')
+
+# userN = int(input('Give your number! '))
+# for multiplier in range(1, 11):
+#     print(multiplier * userN)
