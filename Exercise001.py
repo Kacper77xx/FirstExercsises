@@ -116,3 +116,10 @@
 # userN = int(input('Give your number! '))
 # for multiplier in range(1, 11):
 #     print(multiplier * userN)
+
+import random
+a = random.randint(1, 2)
+if a == 1:
+    print('Orzeł')
+else:
+    print('Reszka')
