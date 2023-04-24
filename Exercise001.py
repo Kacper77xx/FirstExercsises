@@ -50,12 +50,20 @@
 #     print(int(False))
 # print('You received: ' + str(points))
 import random
-while True:
-    user_action = input("Enter a choice (rock, paper, scissors): ")
-    possible_actions = ["rock", "paper", "scissors"]
-    computer_action = random.choice(possible_actions)
-    print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
-    if user_action == possible_actions[0]:
-        elif computer_action == possible_actions[2]:
-            print('Rock beats scissors! User win!')
-
+n1 = random.randint(1, 101)
+n2 = random.randint(1, 101)
+n3 = random.randint(1, 101)
+print(str(n1) + ' ' + str(n2) + ' ' + str(n3))
+userChoice = int(input('Choose the highest number! '))
+if userChoice == n1:
+    if n1 > n2:
+        if n1 > n3:
+            print('Correct!')
+if userChoice == n2:
+    if n2 > n1:
+        if n2 > n3:
+            print('Correct!')
+if userChoice == n3:
+    if n3 > n2:
+        if n3 > n1:
+            print('Correct!')
