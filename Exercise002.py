@@ -3,7 +3,6 @@
 #     print(list[i])
 #     if list[i] == 'b':
 #         # print('Beata')
-import random
 
 # import random
 # a = 3
@@ -85,19 +84,51 @@ import random
 # random.shuffle(t)
 # print(t)
 
-import random
-number = random.randint(1, 10)
-a = 1
-t5 = []
-while a < 6:
-    t5.append(a * number)
+# import random
+# number = random.randint(1, 10)
+# a = 1
+# t5 = []
+# while a < 6:
+#     t5.append(a * number)
+#     a += 1
+# random.shuffle(t5)
+# print(t5[0], t5[1], t5[2], t5[3])
+# print('Write a last number!')
+# userAns = int(input())
+# if userAns == t5[4]:
+#     print('Correct!')
+# else:
+#     print('Incorrect')
+#     print('Right answer is ' + str(t5[4]))
+
+# import random
+# t = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# random.shuffle(t)
+# # print(t)
+# # t.sort()
+# # print(t)
+
+print('Tell me your favorites movies!')
+movies = []
+userMovies = ''
+while userMovies != 'End':
+    userMovies = input()
+    if userMovies != 'End':
+        movies.append(userMovies)
+a = 0
+while a < len(movies):
     a += 1
-random.shuffle(t5)
-print(t5[0], t5[1], t5[2], t5[3])
-print('Write a last number!')
-userAns = int(input())
-if userAns == t5[4]:
-    print('Correct!')
-else:
-    print('Incorrect')
-    print('Right answer is ' + str(t5[4]))
+print(movies)
+a = 0
+while a < len(movies) - 1:
+    if movies[a] > movies[a + 1]:
+        print('Unsorted, do you want to sort it?')
+        userWish = input()
+        if userWish == 'Yes':
+            movies.sort()
+            print('Has been sorted')
+        else:
+            print('Unsorted')
+        break
+    a += 1
+print(movies)
