@@ -17,6 +17,7 @@
 # else:
 #     print("Unlucky, you've to repeat!")
 # print('Correct answer is: ', time.strftime('%S', time.gmtime()))
+#
 # points = 0
 # print('First question:')
 # print('2 + 2 = ?')
@@ -117,9 +118,15 @@
 # for multiplier in range(1, 11):
 #     print(multiplier * userN)
 
-import random
-a = random.randint(1, 2)
-if a == 1:
-    print('Heads')
-else:
-    print('Tails')
+# import random
+# a = random.randint(1, 2)
+# if a == 1:
+#     print('Heads')
+# else:
+#     print('Tails')
+
+# a = 1
+# while a < 10:
+#     print(str(a) * a)
+#     a += 1
+
