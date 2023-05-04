@@ -29,3 +29,36 @@
 #     a += 1
 # print(t)
 
+# import random
+# t = [[], [], [], [], []]
+# c = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')']
+# a = 0
+# while a < 5:
+#     b = 0
+#     while b < 5:
+#         t[a].append(random.randint(0, 9))
+#         b +=1
+#     a += 1
+# a = 0
+# while a < 5:
+#     print(c[t[a][0]], c[t[a][1]], c[t[a][2]], c[t[a][3]], c[t[a][4]])
+#     a += 1
+
+# import sys
+# import time
+# bar = ProgressBar(maxval = 10)
+# bar.start()
+# time.sleep(2)
+# bar.update(5)
+# time.sleep(2)
+# bar.update(10)
+# time.sleep(2)
+# bar.finish()
+
+# https://stackoverflow.com/questions/3160699/python-progress-bar
+from alive_progress import alive_bar; import time
+for total in 5000, 7000, 4000, 0:
+    with alive_bar(total) as bar:
+        for _ in range(5000):
+            time.sleep(.001)
+            bar()
