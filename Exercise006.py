@@ -75,16 +75,17 @@
 # bar.finish()
 # print('Report sent')
 
-from progressbar import ProgressBar; import random
-points = 0
-bar = ProgressBar(maxval = 6)
-bar.start()
-a = 0
-while a < 6:
-    b = random.randint(1, 20)
-    c = random.randint(1, 20)
-    answer = int(input(str(b) + ' + ' + str(c) + ' = '))
-    if b + c == answer:
-        points += 1
-    bar.update(points)
-    a += 1
+# from progressbar import ProgressBar; import random
+# points = 0
+# bar = ProgressBar(maxval = 6)
+# bar.start()
+# a = 0
+# while a < 6:
+#     b = random.randint(1, 20)
+#     c = random.randint(1, 20)
+#     answer = int(input(str(b) + ' + ' + str(c) + ' = '))
+#     if b + c == answer:
+#         points += 1
+#     bar.update(points)
+#     a += 1
+
