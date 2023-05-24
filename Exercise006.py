@@ -56,24 +56,24 @@
 # bar.finish()
 
 # https://stackoverflow.com/questions/3160699/python-progress-bar
-# from alive_progress import alive_bar; import time
-# for total in 5000, 7000, 4000, 0:
-#     with alive_bar(total) as bar:
-#         for _ in range(5000):
-#             time.sleep(.001)
-#             bar()
+from alive_progress import alive_bar; import time
+for total in 5000, 7000, 4000, 0:
+    with alive_bar(total) as bar:
+        for _ in range(5000):
+            time.sleep(.001)
+            bar()
 
-# from progressbar import ProgressBar; import time
-# print('I have to send a error report')
-# a = 0
-# bar = ProgressBar(maxval = 100)
-# bar.start()
-# while a < 100:
-#     time.sleep(0.01)
-#     bar.update(a)
-#     a += 0.5
-# bar.finish()
-# print('Report sent')
+from progressbar import ProgressBar; import time
+print('I have to send a error report')
+a = 0
+bar = ProgressBar(maxval = 100)
+bar.start()
+while a < 100:
+    time.sleep(0.01)
+    bar.update(a)
+    a += 0.5
+bar.finish()
+print('Report sent')
 
 # from progressbar import ProgressBar; import random
 # points = 0
